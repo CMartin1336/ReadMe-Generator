@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const generateReadMe = (answers) =>
   `
-  # ${answers.projectName} [License](https://img.shields.io/badge/license-${answers.license}-blue)
+  # ${answers.projectName} ![License](https://img.shields.io/badge/license-${answers.license}-blue)
   
   # Description
   ${answers.projectDescription}
@@ -23,7 +23,7 @@ const generateReadMe = (answers) =>
   ${answers.installation}
 
   # Images
-  [project image](${answers.imageUrl})
+  ![project image](${answers.imageUrl})
 
   # Usage
   ${answers.usage}

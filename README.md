@@ -4,8 +4,8 @@ README File Generator using Node
 # Description
 Develop a node application to generate high quality README files in the terminal
 
-# Images
-[project image](./assets/images/)
+# Image
+![project image](./assets/images/terminal.png)
 
 # Installation
 1. Create repo
