@@ -1,5 +1,5 @@
 # ReadMe-Generator
-ReadMe File Generator using Node
+README File Generator using Node
 
 # Description
 Develop a node application to generate high quality README files in the terminal

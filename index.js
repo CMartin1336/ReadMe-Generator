@@ -29,6 +29,10 @@ const generateReadMe = (answers) =>
 
   # Testing
   ${answers.testing}
+
+  # Questions
+  ${answers.githubUrl}
+  ${answers.email}
   
   # Live Project
   ${answers.liveUrl}
@@ -71,6 +75,16 @@ inquirer
       type: 'input',
       name: 'testing',
       message: 'What are the testing guidelines?',
+    },
+    {
+      type: 'input',
+      name: 'githubUrl',
+      message: 'What is your GitHub URL?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email?',
     },
     {
       type: 'input',
