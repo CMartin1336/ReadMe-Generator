@@ -9,11 +9,11 @@ const generateReadMe = (answers) =>
   ${answers.projectDescription}
 
   # Table of Contents
-  1. Installation
-  2. Images
-  3. Live Project
-  4. Credit
-  5. License
+  1. [Installation](#installation)
+  2. [Images](#images)
+  3. [Live Project](#live-project)
+  4. [Credit](#credit)
+  5. [License](#license)
     
   # Installation
   ${answers.installation}
