@@ -1,26 +1,48 @@
-# ReadMe-Generator ![License](https://img.shields.io/badge/license-GNU-blue)
-README File Generator using Node
 
-# Description
-Develop a node application to generate high quality README files in the terminal
+  # README Generator ![License](https://img.shields.io/badge/license-GNU-blue)
+  
+  # Description
+  Node application that generates a high quality README based on prompts
 
-# Image
-![project image](./assets/images/terminal.png)  
-![project gif](./assets/images/readMeGif.gif)
+  # Table of Contents
+  1. [Installation](#installation)
+  2. [Images](#images)
+  2. [Usage](#usage)
+  3. [Contributing](#contributing)
+  4. [Testing](#testing)
+  5. [Questions](#questions)
+  6. [Live Project](#live-project)
+  7. [Credit](#credit)
+  8. [License](#license)
+    
+  # Installation
+  1. Create repo and clone to machine
+  2. Initalize NPM and install inquirer
+  3. Build README structure, prompts, and ability to write file
+  4. Run node index.js in terminal and build README file for repo
 
-# Installation
-1. Create repo
-2. Initialize NPM and install inquirer
-3. Build base README.md structure in index.js file
-4. Insert prompts and a way to spit that out onto a file
-5. Run node index.js in terminal and build README.md
+  # Images
+  ![project image](./assets/images/readMeGif.gif)
 
-# Live Project
-https://cmartin1336.github.io/ReadMe-Generator/
+  # Usage
+  This is an open source project
 
-# Credit
-Christian Martin
+  # Contributing
+  This project is completed
 
-# License
-Copyright © 2021 [Christian Martin](www.github.com/CMartin1336)  
-This project is [GNU](https://github.com/CMartin1336/ReadMe-Generator/blob/main/LICENSE) licensed.
+  # Testing
+  Run node index.js and validate README was generated
+
+  # Questions
+  GitHub: www.github.com/CMartin1336  
+  Email: Christian@stikman.com
+  
+  # Live Project
+  https://cmartin1336.github.io/ReadMe-Generator
+
+  # Credit
+  Christian Martin
+  
+  # License
+  This project is [GNU](www.github.com/CMartin1336/ReadMe-Generator/blob/main/LICENSE) licensed.
+  

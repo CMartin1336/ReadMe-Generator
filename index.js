@@ -119,7 +119,7 @@ inquirer
   ])
   .then((answers) => {
     const readMePageContent = generateReadMe(answers);
-    fs.writeFile('README2.md', readMePageContent, (err) =>
+    fs.writeFile('README.md', readMePageContent, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
