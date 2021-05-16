@@ -88,10 +88,10 @@ inquirer
       message: 'Enter anyone that deserves credit for work on the project.',
     },
     {
-        //Update to be a choice list
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'What license do you want to use?',
+      choices: ['Apache','GNU','MIT',],
     },
   ])
   .then((answers) => {
