@@ -1,11 +1,12 @@
-# ReadMe-Generator
+# ReadMe-Generator ![License](https://img.shields.io/badge/license-GNU-blue)
 README File Generator using Node
 
 # Description
 Develop a node application to generate high quality README files in the terminal
 
 # Image
-![project image](./assets/images/terminal.png)
+![project image](./assets/images/terminal.png)  
+![project gif](./assets/images/readMeGif.gif)
 
 # Installation
 1. Create repo
