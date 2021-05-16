@@ -2,52 +2,96 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadMe = (answers) =>
-  `# ReadMe-Generator
-  ReadMe File Generator using Node
+  `
+  # ${answers.projectName}
   
   # Description
-  
-  # Images
-  
+  ${answers.projectDescription}
+
+  # Table of Contents
+  1. Installation
+  2. Images
+  3. Live Project
+  4. Credit
+  5. License
+    
   # Installation
+  ${answers.installation}
+
+  # Images
+  ${answers.imageUrl}
+
+  # Usage
+  ${answers.usage}
+
+  # Contributing
+  ${answers.contribution}
+
+  # Testing
+  ${answers.testing}
   
   # Live Project
-  
+  ${answers.liveUrl}
+
   # Credit
+  ${answers.credit}
   
-  # License`;
+  # License
+  ${answers.license}
+  `;
 
 inquirer
   .prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'projectName',
+      message: 'What is your projects name?',
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'projectDescription',
+      message: 'What is your project description?',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'installation',
+      message: 'What are the installation steps?',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'usage',
+      message: 'What usage info do you want to provide?',
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+      name: 'contribution',
+      message: 'What are the contribution guidelines?',
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'testing',
+      message: 'What are the testing guidelines?',
+    },
+    {
+      type: 'input',
+      name: 'imageUrl',
+      message: 'URL for images of application?',
+    },
+    {
+      type: 'input',
+      name: 'liveUrl',
+      message: 'Enter your live page URL.',
+    },
+    {
+      type: 'input',
+      name: 'credit',
+      message: 'Enter anyone that deserves credit for work on the project.',
+    },
+    {
+        //Update to be a choice list
+      type: 'input',
+      name: 'license',
+      message: 'What license do you want to use?',
     },
   ])
   .then((answers) => {
