@@ -11,15 +11,19 @@ const generateReadMe = (answers) =>
   # Table of Contents
   1. [Installation](#installation)
   2. [Images](#images)
-  3. [Live Project](#live-project)
-  4. [Credit](#credit)
-  5. [License](#license)
+  2. [Usage](#usage)
+  3. [Contributing](#contributing)
+  4. [Testing](#testing)
+  5. [Questions](#questions)
+  6. [Live Project](#live-project)
+  7. [Credit](#credit)
+  8. [License](#license)
     
   # Installation
   ${answers.installation}
 
   # Images
-  ${answers.imageUrl}
+  [project image](${answers.imageUrl})
 
   # Usage
   ${answers.usage}
@@ -31,8 +35,8 @@ const generateReadMe = (answers) =>
   ${answers.testing}
 
   # Questions
-  ${answers.githubUrl}
-  ${answers.email}
+  GitHub: ${answers.githubUrl}  
+  Email: ${answers.email}
   
   # Live Project
   ${answers.liveUrl}
@@ -41,7 +45,7 @@ const generateReadMe = (answers) =>
   ${answers.credit}
   
   # License
-  ${answers.license}
+  This project is [${answers.license}](${answers.repoUrl}/blob/main/LICENSE) licensed.
   `;
 
 inquirer
@@ -58,6 +62,11 @@ inquirer
     },
     {
       type: 'input',
+      name: 'repoUrl',
+      message: 'What is your project repo URL?',
+    },
+    {
+      type: 'editor',
       name: 'installation',
       message: 'What are the installation steps?',
     },
@@ -110,7 +119,7 @@ inquirer
   ])
   .then((answers) => {
     const readMePageContent = generateReadMe(answers);
-    fs.writeFile('README.md', readMePageContent, (err) =>
+    fs.writeFile('README2.md', readMePageContent, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
