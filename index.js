@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const generateReadMe = (answers) =>
   `
-  # ${answers.projectName}
+  # ${answers.projectName} [License](https://img.shields.io/badge/license-${answers.license}-blue)
   
   # Description
   ${answers.projectDescription}
@@ -53,17 +53,17 @@ inquirer
     {
       type: 'input',
       name: 'projectName',
-      message: 'What is your projects name?',
+      message: 'What is the projects name?',
     },
     {
       type: 'input',
       name: 'projectDescription',
-      message: 'What is your project description?',
+      message: 'What is the project description?',
     },
     {
       type: 'input',
       name: 'repoUrl',
-      message: 'What is your project repo URL?',
+      message: 'What is the project repo URL?',
     },
     {
       type: 'editor',
